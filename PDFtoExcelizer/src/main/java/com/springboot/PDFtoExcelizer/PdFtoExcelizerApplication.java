@@ -11,7 +11,4 @@ public class PdFtoExcelizerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PdFtoExcelizerApplication.class, args);
 	}
-
-
-
 }
