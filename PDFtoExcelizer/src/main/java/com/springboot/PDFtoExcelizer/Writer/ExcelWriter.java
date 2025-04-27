@@ -30,11 +30,9 @@ public class ExcelWriter {
                     cell.setCellValue(cells[j]);
                 }
             }
-
             try (FileOutputStream fileOut = new FileOutputStream(outputFilePath)) {
                 workbook.write(fileOut);
             }
         }
-
     }
 }
