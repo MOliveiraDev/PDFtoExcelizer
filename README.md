@@ -15,3 +15,11 @@ O **PDFtoExcelizer** é um projeto desenvolvido em Java com Spring Boot que auto
 
 ```bash
 git clone https://github.com/seu-usuario/PDFtoExcelizer.git
+
+```
+## Tecnologias Utilizadas
+
+- **Java 21**
+- **Spring Boot** (para criação da aplicação e agendamento de tarefas)
+- **Apache POI** (para manipulação de arquivos Excel)
+- **Lombok** (para simplificação de código)
