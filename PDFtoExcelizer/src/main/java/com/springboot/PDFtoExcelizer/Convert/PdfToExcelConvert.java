@@ -22,14 +22,14 @@ public class PdfToExcelConvert {
 
     @Scheduled(fixedDelay = 2000)
     public void processPdfFile() {
-        String inputFolderPath = "D:/GitHub/MeuProjeto/Springboot/com.springboot-PDFtoExcelizer/PDFtoExcelizer/PDFtoExcelizer/Convert/";
+        String inputFolderPath = "Caminho da pasta com os arquivos";
         File inputDir = new File(inputFolderPath);
         File[] files = inputDir.listFiles(dir -> dir.isFile() && dir.getName().endsWith(".pdf"));
 
         if (files != null && files.length > 0) {
             for (File file : files) {
                 String pdfFilePath = file.getAbsolutePath();
-                String outputFolderPath = "D:/GitHub/MeuProjeto/Springboot/com.springboot-PDFtoExcelizer/PDFtoExcelizer/PDFtoExcelizer/Convert/Excel/";
+                String outputFolderPath = "Caminho da pasta para salvar os arquivos";
                 String outputFilePath = Paths.get(outputFolderPath, file.getName().replace(".pdf", ".xlsx")).toString();
 
                 try {
